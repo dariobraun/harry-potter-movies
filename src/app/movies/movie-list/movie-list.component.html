@@ -1,0 +1,13 @@
+<ul *ngIf="movies$ | async as movies" class="movie-list">
+  <li *ngFor="let movie of movies">
+    <div class="list-layout">
+      <div class="movie-container">
+        <div class="movie-title">{{ movie.title }}</div>
+        <div class="movie-details">
+          <span>Release Date: {{ movie.release_date }}</span><span>Budget: {{ movie.budget }}</span><span>Duration: {{ movie.duration }}</span>
+        </div>
+      </div>
+      <button>Details</button>
+    </div>
+  </li>
+</ul>
