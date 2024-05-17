@@ -1,7 +1,7 @@
 import {Component, inject} from '@angular/core';
-import {MovieService} from "../movie.service";
+import {MovieService} from "../../movie.service";
 import {AsyncPipe, DatePipe, NgForOf, NgIf} from "@angular/common";
-import {MinutesToHoursPipe} from "../../pipes/minutes-to-hours.pipe";
+import {MinutesToHoursPipe} from "../../../pipes/minutes-to-hours.pipe";
 
 @Component({
   selector: 'app-movie-list',

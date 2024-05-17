@@ -1,15 +1,15 @@
 .movie-list {
-  width: 50%;
-  margin: 0 auto;
   padding: 0.5rem 2rem 2rem;
   background: lightgray;
   border-radius: 5px;
   color: black;
+  margin: 0;
 
-  li {
-    margin-top: 2rem;
-    list-style-type: none;
-  }
+    li {
+      margin-top: 2rem;
+      list-style-type: none;
+    }
+
 }
 
 .list-layout {

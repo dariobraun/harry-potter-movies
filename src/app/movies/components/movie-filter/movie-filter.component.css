@@ -1,0 +1,16 @@
+.filter-container {
+  padding: 1rem;
+  background: darkgray;
+  border-radius: 5px;
+  color: black;
+}
+
+.input-container {
+  display: flex;
+  gap: 2rem;
+
+  input {
+    background: lightgray;
+    color: black;
+  }
+}
