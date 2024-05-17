@@ -5,6 +5,11 @@
   color: black;
 }
 
+form {
+  color: black;
+  background: darkgray;
+}
+
 .input-container {
   display: flex;
   gap: 2rem;

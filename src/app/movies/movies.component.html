@@ -1,7 +1,9 @@
 <div class="movie-list-container">
-  <app-movie-filter></app-movie-filter>
+  <app-movie-filter
+    (inputChange)="filterValues$.next($event)"
+  ></app-movie-filter>
   <app-movie-list
-    *ngIf="movies$ | async as movies"
+    *ngIf="filteredMovies$ | async as movies"
     [movies]="movies"
   ></app-movie-list>
 </div>

@@ -1,4 +1,4 @@
-<ul class="movie-list">
+<ul *ngIf="movies.length > 0; else noMovies" class="movie-list">
   <li *ngFor="let movie of movies">
     <div class="list-layout">
       <div class="movie-container">
@@ -14,3 +14,4 @@
     </div>
   </li>
 </ul>
+<ng-template #noMovies>No movies found...</ng-template>
