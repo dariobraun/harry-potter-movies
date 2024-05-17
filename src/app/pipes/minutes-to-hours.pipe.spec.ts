@@ -8,6 +8,6 @@ describe('MinutesToHoursPipe', () => {
 
   it('should transform minutes to hours and minutes', () => {
     const pipe = new MinutesToHoursPipe();
-    expect(pipe.transform('152')).toEqual('2h 32min')
-  })
+    expect(pipe.transform('152')).toEqual('2h 32min');
+  });
 });
