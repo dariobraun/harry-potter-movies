@@ -1,6 +1,7 @@
 import {Component, inject} from '@angular/core';
 import {MovieService} from "../movie.service";
-import {AsyncPipe, NgForOf, NgIf} from "@angular/common";
+import {AsyncPipe, DatePipe, NgForOf, NgIf} from "@angular/common";
+import {MinutesToHoursPipe} from "../../pipes/minutes-to-hours.pipe";
 
 @Component({
   selector: 'app-movie-list',
@@ -8,7 +9,9 @@ import {AsyncPipe, NgForOf, NgIf} from "@angular/common";
   imports: [
     AsyncPipe,
     NgIf,
-    NgForOf
+    NgForOf,
+    DatePipe,
+    MinutesToHoursPipe
   ],
   templateUrl: './movie-list.component.html',
   styleUrl: './movie-list.component.css'
