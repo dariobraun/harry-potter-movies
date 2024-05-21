@@ -1,0 +1,12 @@
+<div class="grid-container">
+  <div class="col-1-1">Box office</div>
+  <div class="col-2-1">{{ movieDetails?.box_office ?? "" | dollarAmount }}</div>
+  <div class="col-1-2">Budget</div>
+  <div class="col-2-2">{{ movieDetails?.budget ?? "" | dollarAmount }}</div>
+  <div class="col-2-3">Duration</div>
+  <div class="col-2-3">{{ movieDetails?.duration ?? "" | minutesToHours }}</div>
+  <div class="col-1-4">Producers</div>
+  <div class="col-2-4">{{ movieDetails?.producers }}</div>
+  <div class="col-1-5">Cinematographers</div>
+  <div class="col-2-5">{{ movieDetails?.cinematographers }}</div>
+</div>

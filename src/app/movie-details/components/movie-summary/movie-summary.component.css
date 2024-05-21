@@ -1,0 +1,11 @@
+.image-and-paragraph {
+  display: flex;
+
+  .summary {
+    font-weight: bold;
+  }
+
+  img {
+    height: 300px
+  }
+}

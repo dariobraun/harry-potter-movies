@@ -4,13 +4,12 @@
       <div class="movie-container">
         <div class="movie-title">{{ movie.title }}</div>
         <div class="movie-details">
-          <span
-            >Release date: {{ movie.release_date | date: "yyyy-MM-dd" }}</span
-          ><span>Budget: ${{ movie.budget }} million</span
+          <span>Release date: {{ movie.release_date | date: DATE_FORMAT }}</span
+          ><span>Budget: {{ movie.budget | dollarAmount }}</span
           ><span>Duration: {{ movie.duration | minutesToHours }}</span>
         </div>
       </div>
-      <button [id]="movie.id">Details</button>
+      <button [id]="movie.id" [routerLink]="movie.id">Details</button>
     </div>
   </li>
 </ul>

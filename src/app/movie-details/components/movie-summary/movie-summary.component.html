@@ -1,0 +1,9 @@
+<div *ngIf="details">
+  <h1>{{ details.title }}</h1>
+  <div class="image-and-paragraph">
+    <img [src]="details.poster" alt="movie poster" />
+    <div>
+      <p><span class="summary">Summary: </span> {{ details.summary }}</p>
+    </div>
+  </div>
+</div>
